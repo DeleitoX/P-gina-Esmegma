@@ -1,0 +1,261 @@
+:root{
+    --color1: hsla(194 100% 69% / 1);
+    --color2: hsla(217 100% 56% / 1);
+    --color3: hsla(360 100% 100% / 1);
+}
+
+body{
+    background-color: rgb(74, 97, 138);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.cabecero{
+    background-color: white;
+    height: 100px;
+    position: sticky;
+    z-index: 1;
+    box-shadow: 0px 5px 20px 5px rgb(182, 181, 181);
+}
+
+button{
+    margin-top: 32px;
+}
+
+.login{
+    margin-left: 110em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: none;
+    box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.login:hover{
+    transition: all 0.1s;
+}
+
+.login:active{
+    transform: scale(0.9);
+}
+
+.register{
+    --color1: rgb(85, 92, 94);
+    --color2: rgb(13, 13, 14);
+    --color3: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    margin-left: 2.5em;
+    cursor: pointer;
+    width: 110px;
+    height: 35px;
+    transition: 0.3s;
+    background-size: 280% auto;
+    background-image: linear-gradient(
+    325deg,
+    var(--color2) 0%,
+    var(--color1) 55%,
+    var(--color2) 90%
+    );
+    border: none;
+    border-radius: 5px;
+    color: var(--color3);
+    box-shadow:
+    0px 0px 20px rgba(143, 144, 145, 0.5),
+    0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+    inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+    inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+  
+.register:hover {
+    background-position: right top;
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+.register:active{
+    transform: scale(0.9);
+}
+
+.home{
+    border: none;
+    background-color: transparent;
+}
+
+.contacto{
+    margin-left: 1em;
+    border: none;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    position: relative;
+    padding: 5px;
+}
+
+.contacto::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+.contacto:hover::after{
+    width: 100%;
+}
+
+.detalles{
+    margin-right: 2em;
+    margin-left: 1em;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    padding: 5px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.detalles::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+.detalles:hover::after{
+    width: 100%;
+}
+
+.house{
+    margin-left: 5em;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.house::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+.house:hover::after{
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;   
+}
+
+.titulo{
+    position: absolute;
+    top: 0;
+    font-family: "Boldonse", system-ui;
+    -webkit-user-select: none;
+}
+
+.instagram{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin-left: 3.5em;
+    border-radius: 6px;
+}
+
+.instagram:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.instagram:active{
+    transform: scale(0.9);
+}
+
+.youtube{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin-left: 1.2em;
+    color: red;
+}
+
+.youtube:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.youtube:active{
+    transform: scale(0.9);
+}
+
+.facebook{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin-left: 1.2em;
+    color: blue;
+}
+
+.facebook:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.facebook:active{
+    transform: scale(0.9);
+}
+
+.logo{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+}
+
+.insta{
+    cursor: pointer;
+    margin-left: 1.2em;
+    position: relative;
+    left: 0px;
+    top: 9px;
+    height: 40px;
+}
+
+.insta:hover{
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+.insta:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
